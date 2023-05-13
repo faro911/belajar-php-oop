@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Counter : <span id="hasil"></span></p>
+    <button onclick="tambah(1)">tambah kan +1</button>
+    <button onclick="kurang(-1)">kurangkan kan -1</button>
+    
+    <script>
+        let paste = document.getElementById("hasil")
+        let result = 0;
+
+        function tambah(penjumlahan){
+            let hasil  = result + penjumlahan
+        }
+        function kurang(pengurangan){
+           let hasil =  result - pengurangan
+        }
+        paste.innerHTML = result
+        console.log(hasil);
+        </script>
+    
+</body>
+</html>
